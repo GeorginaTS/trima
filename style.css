@@ -1,0 +1,207 @@
+:root {
+  --red-color: #8e3042;
+  --blue-color: #0b5586;
+}
+
+* {
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  margin: 1rem;
+}
+a {
+    text-decoration: none;
+}
+/* HEADER */
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 1rem;
+}
+header img {
+  height: 10vh;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 0.4rem;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 100%;
+  border: 2px solid var(--red-color);
+  color: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa:hover {
+  background-color: var(--red-color);
+  opacity: 0.8;
+  color: white;
+}
+
+#rrss {
+  display: flex;
+  gap:0.5rem;
+}
+#rrss span {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color:var(--red-color);
+    font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav ul li {
+  min-width: 4rem;
+  border: 2px solid var(--blue-color);
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+nav ul li:hover {
+  background-color: var(--blue-color);
+  color: white;
+  transition: color, background-color 1s ease;
+}
+
+/* HERO */
+#hero {
+  width: 100vw;
+  height: 15rem;
+  background-image: url("https://www.trimamotor.cat/wp-content/uploads/2014/04/TRIMA_header-e1551367603525.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 5px var(--blue-color);
+}
+/* SECTION SERVEIS */
+#serveis {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90vw;
+}
+@media only screen and (max-width: 600px) {
+    #serveis {
+      flex-direction: column;
+    }
+}
+#serveis article {
+  width: 20vw;
+  min-width: 150px;
+  height: 14vw;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid var(--blue-color);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    #serveis article {
+      width:100%
+    }
+}
+#serveis article:hover{
+    filter: contrast(160%);
+    cursor: pointer;
+}
+#serveis article p {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0b558690;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#bosch {
+    background-image: url("https://www.trimamotor.cat/wp-content/uploads/2018/02/foto1.jpg");
+    object-fit: cover;
+}
+#vehicles {
+    background-image: url("https://www.trimamotor.cat/wp-content/uploads/2019/03/thumbnail_TRIMA_vehicles9b-315x234.jpg");
+    object-fit: cover;
+}
+
+
+/* SECCIO LOCALITZACIO I CONTACTA */
+#local-contacta {
+  width: 100vw;
+  padding: 1rem 1rem 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--red-color);
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+    #local-contacta {
+      flex-direction: column;
+    }
+}
+#local-contacta div {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+@media only screen and (max-width:600px){
+    #local-contacta div {
+        width: 100%;
+    }
+}
+#local-contacta form{
+    background-color: #ffffff6d;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
