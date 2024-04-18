@@ -15,25 +15,73 @@ body {
 }
 main {
   width: 100%;
+  position: absolute;
+  top:10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+p {
+  padding: 1rem;
+ line-height: 1.5rem;
+}
 hr {
   margin: 1rem;
 }
+
 a {
     text-decoration: none;
+    color: inherit;
+}
+a:hover{
+  text-decoration: underline;
+}
+button {
+  width: 10rem;
+  height: 2rem;
+  font-weight: bold;
+  background-color: white;
+  color:var(--red-color)
+}
+button:hover{
+  color: white;
+  background-color: var(--red-color);
+}
+h1 {
+  text-transform: uppercase;
+}
+label{
+  display: flex;
+  flex-direction: column;
+}
+input, select{
+  height: 1.8rem;
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+}
+textarea{
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem; 
+}
+input[type="checkbox"] {
+  height: 1.2rem;
+  border: 1px solid var(--red-color);
+  border-radius: 5px;
 }
 /* HEADER */
-header {
+header {border: 1px solid green;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: space-between;
-  /* flex-direction: column; */
   align-items: center;
   gap: 1rem;
 }
@@ -127,9 +175,9 @@ nav ul li:hover {
     }
 }
 #serveis article {
-  width: 20vw;
+  width: 25vw;
   min-width: 150px;
-  height: 14vw;
+  height: 18vw;
   min-height: 100px;
   display: flex;
   justify-content: center;
@@ -137,6 +185,7 @@ nav ul li:hover {
   border: 2px solid var(--blue-color);
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  filter: grayscale(30%);
 }
 @media only screen and (max-width: 600px) {
     #serveis article {
@@ -144,8 +193,8 @@ nav ul li:hover {
     }
 }
 #serveis article:hover{
-    filter: contrast(160%);
-    cursor: pointer;
+  filter: grayscale(0%);
+  cursor: pointer;
 }
 #serveis article p {
     width: 100%;
@@ -169,12 +218,14 @@ nav ul li:hover {
 /* SECCIO LOCALITZACIO I CONTACTA */
 #local-contacta {
   width: 100vw;
-  padding: 1rem 1rem 4rem 1rem;
+  /* padding: 1rem 1rem 4rem 1rem; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  gap:4rem;
   background-color: var(--red-color);
   color: white;
+  padding: 1rem;
 }
 @media only screen and (max-width: 600px) {
     #local-contacta {
@@ -182,9 +233,8 @@ nav ul li:hover {
     }
 }
 #local-contacta div {
-    width: 50%;
+    width: 45%;
     height: 100%;
-    padding: 1rem;
 }
 @media only screen and (max-width:600px){
     #local-contacta div {
@@ -203,5 +253,12 @@ footer {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+small{
+  color: grey;
+  text-align: center;
 }
