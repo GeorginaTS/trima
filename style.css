@@ -182,7 +182,7 @@ nav ul li:hover {
   height: 15rem;
   background-image: url("https://www.trimamotor.cat/wp-content/uploads/2014/04/TRIMA_header-e1551367603525.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
