@@ -1,19 +1,22 @@
-#qui, #bosch-qui {
+#serveis-intro {
     width: 70vw;
 }
-.img-qui {
+#serveis-desc {
+    width: 65vw;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap:1rem;
 }
-.img-qui img {
-    width:40vh;
-    height:5vh;
-    min-width: 150px;
-    max-width: 450px;
-    min-height: 150px;
-    max-height: 450px;
-    border: 2px solid var(--blue-color);
+#serveis-desc article {
+    border: 1px solid var(--blue-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+#serveis-desc ul {
+    padding: 0 3rem;
+}
+#multimarca {
+    width:15vw;
 }
 
 .imatges {
