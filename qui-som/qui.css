@@ -1,0 +1,36 @@
+#qui, #bosch-qui {
+    width: 70vw;
+}
+.img-qui {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.img-qui img {
+    width:40vh;
+    height:5vh;
+    min-width: 150px;
+    max-width: 450px;
+    min-height: 150px;
+    max-height: 450px;
+    border: 2px solid var(--blue-color);
+}
+.imatges {
+    width: 70vw;
+    display: flex;
+    gap:0.4rem;
+}
+.imatges img {
+    width:20vw;
+    min-width:70px;
+    max-width: 200px;
+    border: 1px solid var(--blue-color);
+    filter: grayscale(30%);
+}
+.imatges img:hover{
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: all 0.8s ease-in
+}
