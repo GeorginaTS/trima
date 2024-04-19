@@ -95,7 +95,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #ffffffe9;
+  background-color: #ffffffe8;
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
@@ -127,7 +127,6 @@ header img {
   opacity: 0.8;
   color: white;
 }
-
 #rrss {
   display: flex;
   justify-content: center;
@@ -152,22 +151,22 @@ header img {
   font-weight: bold;
 }
 nav {
-  display: flex;
-  justify-content: center;
+  width: 70vw;
 }
 nav ul {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 nav ul li {
   min-width: 4rem;
   border: 2px solid var(--blue-color);
+  border-top: 0;
   padding: 0.5rem 0.8rem;
   text-align: center;
-  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 nav ul li:hover {
