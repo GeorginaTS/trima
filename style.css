@@ -11,7 +11,6 @@
 }
 body {
     width: 100vw;
-    height: 100vh;
 }
 main {
   width: 100%;
@@ -20,13 +19,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 p {
   padding: 1rem;
  line-height: 1.5rem;
 }
 hr {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 a {
@@ -49,6 +50,12 @@ button:hover{
 }
 h1 {
   text-transform: uppercase;
+}
+h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  color: var(--red-color);
 }
 label{
   display: flex;
@@ -74,7 +81,7 @@ input[type="checkbox"] {
 header {border: 1px solid green;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: #ffffffe9;
   width: 100%;
   padding: 1rem 2rem;
@@ -153,7 +160,7 @@ nav ul li:hover {
   background-position: center;
   margin: 1rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #hero h1 {
@@ -161,25 +168,62 @@ nav ul li:hover {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  padding: 1rem;
+  text-wrap: wrap;
   text-shadow: 2px 2px 5px var(--blue-color);
 }
+#hero p{
+  background-color: #0b5586da;
+  color: white;
+}
+
+
+/* SECTION NOVETATS */
+#novetats {
+  padding: 1rem;
+  width: 70vw;
+  border:2px solid var(--red-color);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 1rem;
+}
+#novetats article{
+  gap:1rem;
+  background-color: #ffffff5b;
+}
+#novetats article h4 {
+  width: 100%;
+  color:var(--blue-color);
+  font-weight: bold;
+  padding: 0.2rem 1rem;
+}
+#novetats article p {
+  padding: 0 1rem;
+ 
+}
+#novetats article a {
+  color: var(--blue-color);
+  font-weight: 600;
+}
+#novetats hr {
+  border: 1px dashed var(--red-color);
+}
+
 /* SECTION SERVEIS */
 #serveis {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   width: 90vw;
-}
-@media only screen and (max-width: 600px) {
-    #serveis {
-      flex-direction: column;
-    }
 }
 #serveis article {
   width: 25vw;
   min-width: 150px;
+  max-width: 315px;
   height: 18vw;
   min-height: 100px;
+  max-height: 234px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -187,15 +231,14 @@ nav ul li:hover {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   filter: grayscale(30%);
-}
-@media only screen and (max-width: 600px) {
-    #serveis article {
-      width:100%
-    }
+  margin: 1rem;
+  transition: all .3s ease-in-out; 
 }
 #serveis article:hover{
   filter: grayscale(0%);
   cursor: pointer;
+  transform: scale(1.1);
+  z-index: 5;
 }
 #serveis article p {
     width: 100%;
@@ -208,11 +251,13 @@ nav ul li:hover {
 }
 #bosch {
     background-image: url("https://www.trimamotor.cat/wp-content/uploads/2018/02/foto1.jpg");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
 }
 #vehicles {
     background-image: url("https://www.trimamotor.cat/wp-content/uploads/2019/03/thumbnail_TRIMA_vehicles9b-315x234.jpg");
     object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -221,6 +266,7 @@ nav ul li:hover {
   width: 100vw;
   /* padding: 1rem 1rem 4rem 1rem; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap:4rem;
@@ -228,20 +274,11 @@ nav ul li:hover {
   color: white;
   padding: 1rem;
 }
-@media only screen and (max-width: 600px) {
-    #local-contacta {
-      flex-direction: column;
-    }
-}
 #local-contacta div {
-    width: 45%;
+    /* width: 45%; */
     height: 100%;
 }
-@media only screen and (max-width:600px){
-    #local-contacta div {
-        width: 100%;
-    }
-}
+
 #local-contacta form{
     background-color: #ffffff6d;
     display: flex;
@@ -252,14 +289,18 @@ nav ul li:hover {
 
 footer {
   width: 100%;
+  position: inherit;
+  bottom:0;
   background-color: black;
   color: white;
   padding: 0.8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+
 small{
   color: grey;
   text-align: center;
 }
+
