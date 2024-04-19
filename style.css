@@ -15,7 +15,7 @@ body {
 }
 main {
   width: 100%;
-  position: absolute;
+  position: relative;
   top:10vh;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ header {border: 1px solid green;
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: white;
+  background-color: #ffffffe9;
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
@@ -147,6 +147,7 @@ nav ul li:hover {
 #hero {
   width: 100vw;
   height: 15rem;
+  position: relative;
   background-image: url("https://www.trimamotor.cat/wp-content/uploads/2014/04/TRIMA_header-e1551367603525.jpg");
   background-size: cover;
   background-position: center;
