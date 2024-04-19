@@ -18,6 +18,9 @@
 #multimarca {
     width:15vw;
 }
+#multimarca img {
+    height:10%;
+}
 
 .imatges {
     width: 70vw;
