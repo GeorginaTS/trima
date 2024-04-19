@@ -17,6 +17,7 @@ body {
 main {
   width: 100%;
   min-width: 100%;
+  min-height: 80vh;
   position: inherit;
   margin-top: 14vh;
   display: flex;
