@@ -13,6 +13,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 main {
   width: 100%;
@@ -111,6 +112,9 @@ header {
 }
 header img {
   height: 10vh;
+}
+header img:hover {
+  transform: scale(1.1);
 }
 /* Style all font awesome icons */
 .fa {
@@ -255,10 +259,9 @@ nav ul li:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  width: 90vw;
 }
 #serveis article {
-  width: 30vw;
+  width: 25vw;
   min-width: 150px;
   max-width: 315px;
   height: 25vh;
@@ -277,7 +280,8 @@ nav ul li:hover {
 #serveis article:hover {
   filter: grayscale(0%);
   cursor: pointer;
-  transform: scale(1.1);
+  flex-grow: 1;
+  transform: scale(1.1); 
   z-index: 5;
 }
 #serveis article p {
