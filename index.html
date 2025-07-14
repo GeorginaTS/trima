@@ -16,13 +16,12 @@
   </head>
   <body>
     <header>
-      <img
-        src="https://www.trimamotor.cat/wp-content/uploads/2018/02/logo-trima-motor.png"
-        alt="Logotip Trima Motor"
-      />
-      <div class="telefon"> <i class="fa-solid fa-phone"></i> <p>972 162 599</p></div>
+      <img src="./img/logo-trima-motor.png" alt="Logotip Trima Motor" />
+      <div class="telefon">
+        <i class="fa-solid fa-phone"></i>
+        <p>972 162 599</p>
+      </div>
       <section id="rrss">
-        
         <a
           href="https://wa.me/34651381675"
           target="_blank"
@@ -42,7 +41,6 @@
     </header>
     <main>
       <section id="hero">
-        <h1>Des de 1994 TRIMA MOTOR al vostre servei</h1>
         <p>
           <i class="fa-regular fa-clock"></i> De Dilluns a Divendres <br />8:00h
           a 13:00h i de 15:00h a 20:00h<br /><br />
@@ -55,40 +53,40 @@
           </a>
         </p>
       </section>
-      <nav>
-        <ul>
-          <li><a href="./qui-som">Qui som</a></li>
-          <li><a href="./serveis">Serveis</a></li>
+      <h1 class="title">Des de 1994 TRIMA MOTOR al vostre servei</h1>
+      <h5 style="text-align: center">
+        Som un equip de professionals amb més de 25 anys d'experiència al sector
+        de l'automoció.
+      </h5>
+      <div id="intro">
+      <section id="qui-som">
+        <p>
+          Com a Bosch Car Service li oferim servei complet en les diferents
+          àrees:
+        </p>
+        <ul style="margin-left: 6rem">
+          <li>Manteniment/inspecció</li>
+          <li>Mecànica del vehicle</li>
+          <li>Electricitat/electrònica</li>
+          <li>Climatització/aire condicionat</li>
+          <li>Sistemes de fre/ABS/ESP</li>
+          <li>Servei diesel/gasolina</li>
+          <li>Neumàtics</li>
+          <li>Car multimèdia</li>
+          <li>Sistemes de comfort</li>
+          <li>Parabrises/llunes</li>
+          <li>Diagnosi</li>
         </ul>
-      </nav>
-      <section id="novetats">
-        <h2><i class="fa-solid fa-comment-dots"></i> Novetats</h2>
-        <article>
-          <h4>Abril 2024</h4>
-          <p>
-            <b>Subscriu-te a la newsletter</b> <span>Si et subscrius a la nostra newsletter, no només estaràs al dia de les novetats, també et convidem a un cafè.</span><a href="#"> + més info</a>
-          </p>
-        </article>
-        <hr/>
-        <article>
-          <h4>Febrer 2024</h4>
-          
-          <p>
-              <b>Nous cotxes elèctric Low cost</b><span>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Neque ad consectetur, a dolorum
-            doloremque delectus in odit dolores perspiciatis, deserunt natus
-            vero aperiam earum facilis ullam impedit sapiente adipisci corporis.
-          </span><a href="#"> + més info</a>
-          </p>
-         
-        </article>
- 
       </section>
-      <section id="serveis">
-        <article id="bosch"><p>Bosch Car Service</p></article>
-        <article id="vehicles"><p><a href="./serveis/vehicles-ocasio.html">Vehicles ocasió</a></p></article>
-        <article id="vehicles"><p>Vehicles nous</p></article>
+      <section id="serveis" style="max-width: fit-content;">
+        <a href="./qui-som"
+          ><article id="bosch"><p>Bosch Car Service</p></article></a
+        >
+        <a href="./serveis/vehicles/ocasio/"
+          ><article id="vehicles"><p>Vehicles ocasió</p></article></a
+        >
       </section>
+      </div>
       <section id="local-contacta">
         <div>
           <h1>On som</h1>
@@ -102,66 +100,86 @@
               4<br />
               17401 Arbúcies, Girona
             </p>
-            <hr />
-            <iframe
-              class="mapa"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.816560367107!2d2.5281124755565214!3d41.81071196963141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb2bf543e2e085%3A0x66ce96f1d5b65091!2sBosch%20Car%20Service%20Trima%20Motor!5e0!3m2!1sca!2ses!4v1713456136173!5m2!1sca!2ses"
-              width="100%"
-              height="400px"
-              style="border: 1px solid black"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </article>
         </div>
         <div>
           <h1>Contacta</h1>
           <hr />
           <p>
-            Telefon. 972 16 25 99 · 651 381 675<br />
+            Telefon. <br /><i class="fa-solid fa-phone"></i> 972 16 25 99
+            <br /><i class="fa fa-whatsapp" style="color: white"> </i> 651 381
+            675<br />
             email: <a href="mailto:info@trimamotor.cat">info@trimamotor.cat</a>
           </p>
-          <hr />
-          <form action="mailto:">
-            <label
-              >Nom i Cognoms
-              <input type="text" placeholder="Escriu el teu nom i cognoms"
-            /></label>
-            <label
-              >Correu electrònic
-              <input
-                type="email"
-                placeholder="Escriu el teu correu electrònic"
-                required
-            /></label>
-            <label
-              >Telèfon <input type="text" placeholder="Escriu el teu telèfon"
-            /></label>
-            <label>
-              Assumpte
-              <select name="assumpte" id="assumpte">
-                <option value="0">-- selecciona assumpte --</option>
-                <option value="Taller">Taller</option>
-                <option value="Administració">Administració</option>
-                <option value="Altres">Altres</option>
-              </select></label
-            >
-            <label
-              >Missatge
-              <textarea name="missatge" id="" cols="30" rows="10"></textarea>
-            </label>
-            <label>
-              <input type="checkbox" name="privacitat" id="privacitat" /> *
-              Acceptes Poltica privacitat
-            </label>
-            <button type="submit">Enviar</button>
-          </form>
         </div>
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.816560367107!2d2.5281124755565214!3d41.81071196963141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb2bf543e2e085%3A0x66ce96f1d5b65091!2sBosch%20Car%20Service%20Trima%20Motor!5e0!3m2!1sca!2ses!4v1713456136173!5m2!1sca!2ses"
+          width="90%"
+          height="400px"
+          style="border: 1px solid black"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
-      <small>Avis legal · Politica protecció de dades · Política cookies</small>
+      <small
+        ><a href="./legal/avis-legal.html">Avis legal</a> ·
+        <a href="./legal/privacitat.html">Politica privacitat</a></small
+      >
     </footer>
+    <!-- BÀNER DE COOKIES -->
+    <div
+      id="cookie-banner"
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f9f9f9;
+        padding: 1rem;
+        border-top: 1px solid #ccc;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <p style="margin-bottom: 0.5rem">
+        Utilitzem cookies pròpies i de tercers per analitzar la navegació i
+        millorar els nostres serveis. Pots acceptar, rebutjar o configurar les
+        teves preferències.
+      </p>
+      <div>
+        <button onclick="acceptCookies()" style="margin-right: 0.5rem">
+          Acceptar
+        </button>
+        <button onclick="rejectCookies()" style="margin-right: 0.5rem">
+          Rebutjar
+        </button>
+      </div>
+    </div>
   </body>
 </html>
+<script>
+  function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookie-banner").style.display = "none";
+    // activa Google Analytics o altres cookies aquí si cal
+  }
+
+  function rejectCookies() {
+    localStorage.setItem("cookiesAccepted", "false");
+    document.getElementById("cookie-banner").style.display = "none";
+    // no carreguis cap cookie de tercers
+  }
+
+  window.onload = function () {
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookie-banner").style.display = "flex";
+    }
+  };
+</script>
