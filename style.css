@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.2rem;
+  overflow-x: hidden;
 }
 main {
   width: 100vw;
@@ -235,7 +236,6 @@ nav ul li:hover {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--red-color);
 }
 #serveis article {
   width: 25vw;
@@ -275,7 +275,7 @@ nav ul li:hover {
   object-fit: fill;
 }
 #vehicles {
-  background-image: url("../img/thumbnail_TRIMA_vehicles9b-315x234.jpg");
+  background-image: url("./img/thumbnail_TRIMA_vehicles9b-315x234.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
 }
