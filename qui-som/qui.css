@@ -1,18 +1,32 @@
 #qui, #bosch-qui {
-    width: 70vw;
+    width: 90vw;
 }
 .img-qui {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+}
+@media screen and (max-width: 480px) {
+    .img-qui {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
 }
 .img-qui img {
-    width:40vh;
-    height:5vh;
-    min-width: 150px;
-    max-width: 450px;
-    min-height: 150px;
-    max-height: 450px;
+width: 100%;
+height: auto;
+}
+.img-qui img:hover {
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.2);
+    transition: all 0.8s ease-in;
     border: 2px solid var(--blue-color);
 }
 

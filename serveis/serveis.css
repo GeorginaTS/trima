@@ -1,98 +1,133 @@
 #serveis-intro {
-    width: 70vw;
+  width: 70vw;
 }
 #serveis-desc {
-    width: 65vw;
-    display: flex;
-    justify-content: center;
-    gap:1rem;
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 #serveis-desc article {
-    border: 1px solid var(--blue-color);
-    padding: 1rem;
-    border-radius: 5px;
+  border: 1px solid var(--blue-color);
+  padding: 1rem;
+  border-radius: 5px;
 }
 #serveis-desc ul {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 #multimarca {
-    width:15vw;
+  width: 15vw;
 }
 #multimarca img {
-    height:10%;
+  height: 10%;
 }
 
 .imatges {
-    width: 70vw;
-    display: flex;
-    gap:0.4rem;
+  width: 70vw;
+  display: flex;
+  gap: 0.4rem;
 }
 .imatges img {
-    width:20vw;
-    min-width:70px;
-    max-width: 200px;
-    border: 1px solid var(--blue-color);
-    filter: grayscale(30%);
+  width: 20vw;
+  min-width: 70px;
+  max-width: 200px;
+  border: 1px solid var(--blue-color);
+  filter: grayscale(30%);
 }
-.imatges img:hover{
-    cursor: pointer;
-    z-index: 2;
-    transform: scale(1.2);
-    filter: grayscale(0%);
-    transition: all 0.8s ease-in
+.imatges img:hover {
+  cursor: pointer;
+  z-index: 2;
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  transition: all 0.8s ease-in;
 }
 
 /* VEHICLES D'0CASIÓ */
-#vehicles-ocasio ul{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    height: fit-content;
+#vehicles-ocasio ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: fit-content;
 }
-#vehicles-ocasio li  {
-    width:20vw;
-    min-width:240px;
-    max-width: 320px;
-    height: 100%;
-    box-sizing: border-box;
-    border: 1px solid var(--blue-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: var(--blue-color);
-    padding: 0.4rem;
-
+#vehicles-ocasio li {
+  width: 20vw;
+  min-width: 240px;
+  max-width: 320px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--blue-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--blue-color);
+  padding: 0.4rem;
 }
 #vehicles-ocasio li div {
-    padding: 0.2rem;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 #vehicles-ocasio li .img {
-    height: 150px;
-    background-position: center;
-    background-size: cover;
-    
+  height: 150px;
+  background-position: center;
+  background-size: cover;
 }
 .logos {
-    display: flex;
-    justify-content: center;
-    height: 125px;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 125px;
+  padding: 1rem;
 }
 #vehicle-detail {
-    background-color: var(--red-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    > div {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-    }
+  background-color: var(--red-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 3rem 2rem 2rem;
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
+/* IMATGES VEHICLE DETAIL*/
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.car-img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.car-img.large {
+  width: 100%;
+  height: auto;
+  order: -1;
+}
+
+.car-img:not(.large) {
+  max-width: 282px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+

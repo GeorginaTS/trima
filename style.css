@@ -11,6 +11,7 @@
 }
 body {
   width: 100vw;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,10 +42,12 @@ hr {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  cursor: pointer;
+  color:white;
 }
-a:hover {
-  text-decoration: underline;
+i {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
 }
 button {
   width: 10rem;
@@ -99,17 +102,22 @@ header {
   top: 0;
   z-index: 10;
   background-color: #ffffffe8;
-  width: 100%;
+  width: 100vw;
+  height: fit-content;
   padding: 1rem 2rem;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  color: var(--red-color);
+  > a {
+    color: var(--red-color);
+  }
 }
+
 header img {
-  height: 10vh;
+  max-height: 10vh;
 }
 header img:hover {
   transform: scale(1.1);
@@ -118,8 +126,9 @@ header img:hover {
 .fa {
   padding: 0.4rem;
   font-size: 1rem;
-  width: 2rem;
-  height: 2rem;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.4rem;
   text-align: center;
   border-radius: 100%;
   border: 2px solid var(--red-color);
@@ -127,6 +136,7 @@ header img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in;
 }
 .fa:hover {
   background-color: var(--red-color);
@@ -138,8 +148,9 @@ header img:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 0;
+
 }
+
 
 .telefon {
   display: flex;
@@ -149,30 +160,7 @@ header img:hover {
   color: var(--red-color);
   font-weight: bold;
 }
-nav {
-  width: 70vw;
-}
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-nav ul li {
-  min-width: 4rem;
-  border: 2px solid var(--blue-color);
-  border-top: 0;
-  padding: 0.5rem 0.8rem;
-  text-align: center;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-nav ul li:hover {
-  background-color: var(--blue-color);
-  color: white;
-  transition: color, background-color 1s ease;
-}
+
 
 /* HERO */
 #hero {
@@ -340,16 +328,14 @@ small {
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header {
-    width: 100vw;
     padding: 0.5rem;
     justify-content: center;
     gap: 0rem;
   }
-  main {
-    margin-top: 18vh;
-
+  header img {
+    max-height: 6vh;
   }
   .telefon {
     transform: scale(0.6);
@@ -363,9 +349,15 @@ small {
   }
 
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #local-contacta div {
     width: 100%; /* Ocupa tota l'amplada en pantalles petites */
+  }
+    header {
+    justify-content: space-between;
+  }
+    header img {
+    max-height: 10vh;
   }
 }
 .franja-colors {
@@ -373,14 +365,14 @@ small {
     height: 1rem; /* O l'alçada que vulguis per la franja */
     overflow: hidden;
     background: linear-gradient(to right,
-        #21518f 70%,                            /* Blau des de l'inici fins al 70% */
+        var(--blue-color) 70%,                            /* Blau des de l'inici fins al 70% */
         white 70%,                              /* Blanc comença al 70% */
         white calc(70% + 0.5rem),                 /* Blanc acaba 1rem després del 70% */
-        #bb2234 calc(70% + 0.5rem),                /* Vermell comença on acaba el blanc */
-        #bb2234 100%                            /* Vermell s'estén fins al final */
+        var(--red-color) calc(70% + 0.5rem),                /* Vermell comença on acaba el blanc */
+        var(--red-color) 100%                            /* Vermell s'estén fins al final */
     );
     transform: skewX(-20deg) translateZ(0);
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 1.5rem 0;
     /* filter: blur(0.5px); */
 }
 
