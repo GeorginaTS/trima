@@ -21,14 +21,12 @@ main {
   width: 100vw;
   min-width: 100%;
   min-height: 80vh;
-  position: inherit;
   margin-top: 14vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 p {
   padding: 1rem;
   line-height: 1.5rem;
@@ -69,9 +67,7 @@ h2 {
   padding: 1rem;
   color: var(--red-color);
 }
-section {
-  margin-top: 1rem;
-}
+
 label {
   display: flex;
   flex-direction: column;
@@ -92,6 +88,10 @@ input[type="checkbox"] {
   height: 1.2rem;
   border: 1px solid var(--red-color);
   border-radius: 5px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* HEADER */
 header {
@@ -206,6 +206,8 @@ nav ul li:hover {
 }
 #hero p {
   width:25vw;
+  max-width: 50%; /* Màxim el 50% de l'amplada del contenidor pare */
+  min-width: 200px; /* Mínim 200 píxels */
   background-color: #0b5586da;
   color: white;
   min-width:305px;
@@ -227,6 +229,25 @@ nav ul li:hover {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin: 1rem 0;
+}
+.list-serveis {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  >li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
+    color: white;
+    background-color: var(--blue-color);
+  }
 }
 
 /* SECTION SERVEIS */
@@ -270,9 +291,8 @@ nav ul li:hover {
   font-weight: 700;
 }
 #bosch {
-  background-image: url("./img/foto1.jpg");
-  background-repeat: no-repeat;
-  object-fit: fill;
+  background-image: url("./img/TRIMA_vehicles4-1-300x240.jpg");
+  object-fit: cover;
 }
 #vehicles {
   background-image: url("./img/thumbnail_TRIMA_vehicles9b-315x234.jpg");
@@ -291,7 +311,7 @@ nav ul li:hover {
   gap: 4rem;
   background-color: var(--red-color);
   color: white;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 #local-contacta div {
    width:35%; 
@@ -329,6 +349,7 @@ small {
   }
   main {
     margin-top: 18vh;
+
   }
   .telefon {
     transform: scale(0.6);
@@ -341,5 +362,28 @@ small {
     flex-direction: row;
   }
 
-
 }
+@media (max-width: 768px) {
+  #local-contacta div {
+    width: 100%; /* Ocupa tota l'amplada en pantalles petites */
+  }
+}
+.franja-colors {
+    width: 120%; /* O l'amplada total que vulguis per la franja */
+    height: 1rem; /* O l'alçada que vulguis per la franja */
+    overflow: hidden;
+    background: linear-gradient(to right,
+        #21518f 70%,                            /* Blau des de l'inici fins al 70% */
+        white 70%,                              /* Blanc comença al 70% */
+        white calc(70% + 0.5rem),                 /* Blanc acaba 1rem després del 70% */
+        #bb2234 calc(70% + 0.5rem),                /* Vermell comença on acaba el blanc */
+        #bb2234 100%                            /* Vermell s'estén fins al final */
+    );
+    transform: skewX(-20deg) translateZ(0);
+    margin: 0.5rem 0;
+    /* filter: blur(0.5px); */
+}
+
+
+
+
